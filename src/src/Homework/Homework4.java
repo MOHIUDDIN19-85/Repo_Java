@@ -45,7 +45,7 @@ public class Homework4 {
         }
         //problem 3
         String cMode = "D";
-        String dType = "sport";
+        String dType = "Sport";
         switch (cMode) {
             case "P":
                 System.out.println("You can Park car");
@@ -54,7 +54,7 @@ public class Homework4 {
                 if (dType == "snow"){
                     System.out.println("Display: You are in snow mode ");
         }
-                else if (dType == "sport"){
+                else if (dType == "Sport"){
                     System.out.println("Display: You are in sport mode ");
                 }
                 else if (dType == "eco"){
