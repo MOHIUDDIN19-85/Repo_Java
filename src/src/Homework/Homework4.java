@@ -8,19 +8,25 @@ public class Homework4 {
         double sPercentage = (sScore / maxScore) * 100;
         if (sPercentage >= 91 && sPercentage <= 100) {
             String result = "A";
+            System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 81 && sPercentage <= 90) {
             String result = "B";
+            System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 71 && sPercentage <= 80) {
             String result = "c";
+            System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 61 && sPercentage <= 70) {
             String result = "D";
+            System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 51 && sPercentage <= 60) {
             String result = "E";
+            System.out.println("Student grade is: " + result);
         } else if (sPercentage <= 50) {
             String result = "F";
+            System.out.println("Student grade is: " + result);
         }
 
-        System.out.println("Student percentage: " + sPercentage + " and student grade is: ");
+        System.out.println("Student percentage: " + sPercentage + " and student grade is: " );
 
         //Problem -2
         int var1 = 15;
