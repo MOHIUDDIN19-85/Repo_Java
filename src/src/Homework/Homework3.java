@@ -7,21 +7,18 @@ public class Homework3 {
         //problem 1
         //Pr-1
         String name ="Mohiuddin khan";
-        int nameLength = name.length();
-        System.out.println("The length of my name is " + nameLength);
+        String[]nameSplit = name.split(" ");
+        String ffirstName = nameSplit[0];
+        int lenOfffirstName = ffirstName.length();
+        System.out.println("Length of my first name is :" + lenOfffirstName + ".");
         //Pr-2
        String lastName = "khan";
-       char lastNk = lastName.charAt(0);
-        System.out.println(lastNk);
-        boolean isalstanmContainK= lastNk == 'k'?true:false;
-        System.out.println(isalstanmContainK);
-        //or Pr-2
-        boolean isStartWthk = lastName.startsWith("k");
+       boolean isStartWthk = lastName.startsWith("k");
         System.out.println(isStartWthk);
         //Pr-3
-        String firstName = "Mohiuddin";
-        char lstAlfOfFrstNm = firstName.charAt(8);
-        System.out.println(lstAlfOfFrstNm);
+        String lstletterOfFstName = nameSplit[0].substring(8);
+        System.out.println("The last letter of my First Name is: " + lstletterOfFstName + ".");
+
         //Pr-4
         char lstNmM = lastName.charAt(3);
         boolean isLstNmEndWthM= lstNmM == 'M'?true:false;
@@ -53,11 +50,27 @@ public class Homework3 {
         //problem 5
         String threeWordsSentence = "hApPY nEW yeAr";
         String lowerCaseOfTws = threeWordsSentence.toLowerCase();
-        String LowCaOfSenOne = lowerCaseOfTws.replace('h','H');
-        String LowCaOfSenTwo = LowCaOfSenOne.replace('n','N');
-        String LowCaOfSenThree = LowCaOfSenTwo.replace('y','Y');
-        System.out.println(LowCaOfSenThree);
-        
+        String[] splitOne = lowerCaseOfTws.split(" ");
+        String f1 = splitOne[0].substring(0,1).toUpperCase();
+        String l1 = splitOne[0].substring(1);
+        String w1 = f1 + l1;
+        String f2 = splitOne[1].substring(0,1).toUpperCase();
+        String l2 = splitOne[1].substring(1);
+        String w2 = f2 + l2;
+        String f3 = splitOne[2].substring(0,1).toUpperCase();
+        String l3 = splitOne[2].substring(1);
+        String w3 = f3 + l3;
+        String newWord = w1 + " " + w2 + " " + w3;
+        System.out.println(newWord);
+
+
+
+
+
+
+
+
+
 
         //problem 6
         String threeWordsSentenceOne = "Lab sessIONS clAsses";
