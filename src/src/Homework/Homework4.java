@@ -6,38 +6,39 @@ public class Homework4 {
         double sScore = 150;
         double maxScore = 160;
         double sPercentage = (sScore / maxScore) * 100;
+        String result = "";
         if (sPercentage >= 91 && sPercentage <= 100) {
-            String result = "A";
+             result = "A";
             System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 81 && sPercentage <= 90) {
-            String result = "B";
+             result = "B";
             System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 71 && sPercentage <= 80) {
-            String result = "c";
+             result = "c";
             System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 61 && sPercentage <= 70) {
-            String result = "D";
+             result = "D";
             System.out.println("Student grade is: " + result);
         } else if (sPercentage >= 51 && sPercentage <= 60) {
-            String result = "E";
+             result = "E";
             System.out.println("Student grade is: " + result);
         } else if (sPercentage <= 50) {
-            String result = "F";
+             result = "F";
             System.out.println("Student grade is: " + result);
         }
 
-        System.out.println("Student percentage: " + sPercentage + " and student grade is: " );
+        System.out.println("Student percentage: " + sPercentage + " and student grade is: " + result + "." );
 
         //Problem -2
         int var1 = 15;
-        if (var1 % 3 == 0) {
-            System.out.println("Number divisible by 3");
+        if (var1 % 3 == 0 && var1 % 5 == 0) {
+            System.out.println("Number divisible by both 3 and 5");
         } else if (var1 % 5 == 0) {
             System.out.println("Number divisible by 5");
-        } else if (var1 % 3 == 0 && var1 % 5 == 0) {
-            System.out.println("Number divisible by both 3 and 5");
-        } else if (var1 % 3 != 0 && var1 % 5 != 0) {
-            System.out.println("The number is " + var1);
+        } else if (var1 % 3 == 0) {
+            System.out.println("Number divisible by  3");
+        } else{
+            System.out.println("Undivisible number is " + var1);
         }
         //problem 3
         String cMode = "D";
