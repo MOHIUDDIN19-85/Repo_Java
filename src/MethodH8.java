@@ -23,6 +23,18 @@ public class MethodH8 {
             System.out.println("continue");
         }
         return tonerStatus;
-
     }
+    public static void refil(){
+        if(toner < 10){
+            toner = 100 - toner +toner;
+            System.out.println("After refil toner status is: "+ toner);
+        }
+        else {
+            System.out.println("keep printing");
+        }
+    }
+    public void printSummary(){
+        System.out.println("T: " + toner + " ,P: "+ page);
+    }
+
 }
