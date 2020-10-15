@@ -25,9 +25,17 @@ public class MethodH8 {
         return tonerStatus;
     }
     public static void refil(){
-        if(toner < 10){
+        if(toner < 10 && page <10){
+            toner = 100 - toner +toner;
+            page = 100 - page + page;
+            System.out.println("After refil toner status is: "+ toner + " \n After refil page status is: "+ page);
+        }
+        else if (toner < 10){
             toner = 100 - toner +toner;
             System.out.println("After refil toner status is: "+ toner);
+        }
+        else if (page <10){
+            System.out.println("After refil page status is: "+ page);
         }
         else {
             System.out.println("keep printing");
