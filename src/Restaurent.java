@@ -36,7 +36,7 @@ public class Restaurent {
             System.out.println("Please be seated and enjoy the meal");
         }
         else {
-            System.out.println("Wait for a moment, Soon we will be available");
+            System.out.println(" Wait for a moment, Soon we will be available");
         }
     }
     //P-3
@@ -51,7 +51,7 @@ public class Restaurent {
     }
     //p-5
     public void summary_of_restaurent(){
-        System.out.println("Name of the restaurent is: "+ restaurentName);
+        System.out.println(" Name of the restaurent is: "+ restaurentName);
         System.out.println("Current guest count is: "+ guestCount);
         System.out.println("Guest capacity is: "+ guestCapasity);
     }
