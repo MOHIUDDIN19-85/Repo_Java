@@ -28,8 +28,6 @@ public class Restaurent {
         else{
             System.out.println("Please wait for a moment,\nwhen we are available you are most wellcome");
         }
-
-
     }
     //P2
     public void seatsParty(int guestNum){
